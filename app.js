@@ -1,3 +1,8 @@
+if(process.env.NODE_ENV !="producction"){
+      require('dotenv').config();
+}
+
+
 const express=require("express");
 
 const app=express();
