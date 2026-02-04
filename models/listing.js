@@ -12,19 +12,9 @@ const listingSchema=new Schema({
     },
     description:String,
     image: {
-    filename: {
-      type: String,
-      default: "listingimage",
-    },
-    url: {
-      type: String,
-      default:
-        "https://unsplash.com/photos/a-lighthouse-stands-tall-with-an-american-flag-kr8ekL6FgYg",
-      set: (v) =>
-        v === ""
-          ? "https://unsplash.com/photos/a-lighthouse-stands-tall-with-an-american-flag-kr8ekL6FgYg"
-          : v,
-    },
+      url: String,
+      filename: String,
+    
   },
     price:Number,
     location:String,
